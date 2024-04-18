@@ -1,0 +1,54 @@
+.background-block {
+    position: absolute;
+}
+
+.background-image {
+    width: 1440px;
+}
+
+.planet {
+    width: 200px;
+    position: relative;
+    top: 100px;
+    left: 1000px;
+    animation: planet 50s infinite;
+}
+
+@keyframes planet {
+    100% {transform: rotate(360deg);}
+}
+
+.spaceship {
+    width: 200px;
+    position: relative;
+    rotate: 30deg;
+    animation: spaceship 5s linear infinite;
+}
+
+@keyframes spaceship {
+    from {left: 300px; top: 800px;}
+    to {left: 700px; top: -500px;}
+}
+
+.meteor {
+    position: relative;
+    width: 500px;
+    animation: meteor 3s linear infinite;
+}
+
+@keyframes meteor {
+    from {left: 1200px; bottom: 250px}
+    to {left: -700px; bottom: 0px}
+}
+
+.cosmonaut {
+    position: relative;
+    width: 300px;
+    bottom: 600px;
+    animation: cosmonaut 3s infinite alternate;
+}
+
+@keyframes cosmonaut {
+    from {left: 0px; bottom: 650px}
+    to {left: 50px; bottom: 750px}
+}
